@@ -1,0 +1,103 @@
+{
+  "app_name": "Flutter Template",
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "close": "Close",
+    "save": "Save",
+    "delete": "Delete",
+    "retry": "Retry",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "network_error": "No internet connection",
+    "unknown_error": "Something went wrong. Please try again.",
+    "success": "Success",
+    "skip": "Skip",
+    "next": "Next",
+    "back": "Back",
+    "done": "Done",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "auth": {
+    "welcome": "Welcome",
+    "sign_in_subtitle": "Sign in to save your progress\nand access all features.",
+    "continue_with_google": "Continue with Google",
+    "continue_as_guest": "Continue as Guest",
+    "sign_out": "Sign Out",
+    "sign_out_subtitle": "Return to the login screen",
+    "sign_in_failed": "Sign-in failed",
+    "legal_notice": "By continuing you agree to our Terms & Privacy Policy."
+  },
+  "onboarding": {
+    "slide1_title": "Powerful Features\nAt Your Fingertips",
+    "slide1_subtitle": "Everything you need to be productive, organized, and efficient — all in one place.",
+    "slide2_title": "Smart AI\nThat Works For You",
+    "slide2_subtitle": "Ask anything, get instant answers, and unlock capabilities you never imagined possible.",
+    "slide3_title": "Start Free,\nUpgrade Anytime",
+    "slide3_subtitle": "Try all core features for free. Unlock unlimited access with a premium subscription.",
+    "get_premium": "Get Premium",
+    "start_free": "Start for Free"
+  },
+  "paywall": {
+    "title": "Go Premium",
+    "subtitle": "Unlock unlimited access and all premium features.",
+    "feature_unlimited_ai": "Unlimited AI messages per day",
+    "feature_premium_content": "Access all premium content",
+    "feature_no_ads": "No ads",
+    "feature_priority_support": "Priority support",
+    "subscribe_now": "Subscribe Now",
+    "restore_purchase": "Restore Purchase",
+    "maybe_later": "Maybe Later",
+    "no_plans": "No plans available. Please try again later.",
+    "no_purchases_to_restore": "No active subscription found.",
+    "premium_restored": "Premium restored!"
+  },
+  "home": {
+    "uses_remaining": "{count} uses remaining today",
+    "upgrade_prompt": "Upgrade for unlimited access",
+    "upgrade": "Upgrade",
+    "your_feature": "Your Feature",
+    "feature_placeholder": "Replace this card with your app's core feature. The free limit counter and paywall are already wired up.",
+    "use_feature": "Use Feature",
+    "used_today": "Used Today",
+    "daily_limit": "Daily Limit",
+    "premium_active": "Premium Active"
+  },
+  "settings": {
+    "title": "Settings",
+    "section_account": "Account",
+    "section_appearance": "Appearance",
+    "section_subscription": "Subscription",
+    "section_legal": "Legal",
+    "section_support": "Support",
+    "dark_mode": "Dark Mode",
+    "dark_mode_on": "On",
+    "dark_mode_off": "Off",
+    "language": "Language",
+    "go_premium": "Go Premium",
+    "go_premium_subtitle": "Unlock unlimited access",
+    "premium_active": "Premium Active",
+    "premium_active_subtitle": "Thank you for your support!",
+    "restore_purchase": "Restore Purchase",
+    "restore_subtitle": "Recover your previous subscription",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service",
+    "contact_support": "Contact Support",
+    "app_version": "App Version",
+    "upgrade_label": "UPGRADE"
+  },
+  "update": {
+    "available_title": "Update Available",
+    "available_message": "A new version of the app is available. Update now for the latest features and bug fixes.",
+    "update_now": "Update Now",
+    "later": "Later"
+  },
+  "errors": {
+    "auth_failed": "Authentication failed. Please try again.",
+    "purchase_failed": "Purchase failed. Please try again.",
+    "ad_not_ready": "Ad not available right now.",
+    "network_required": "This feature requires an internet connection."
+  }
+}

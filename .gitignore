@@ -117,3 +117,26 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
+
+# ── Project-specific secrets (NEVER COMMIT) ─────────────────
+# Firebase credentials
+google-services.json
+**/google-services.json
+GoogleService-Info.plist
+
+# API keys / env files (flutter_dotenv — local only, CI uses secrets)
+.env
+.env.*
+*.env
+# .env.example is intentionally NOT ignored — it's the template
+
+# Signing keystores
+*.keystore
+*.jks
+key.properties
+android/key.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/settings.json

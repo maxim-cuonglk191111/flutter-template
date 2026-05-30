@@ -1,0 +1,103 @@
+{
+  "app_name": "Flutter Template",
+  "common": {
+    "ok": "OK",
+    "cancel": "Huỷ",
+    "close": "Đóng",
+    "save": "Lưu",
+    "delete": "Xoá",
+    "retry": "Thử lại",
+    "loading": "Đang tải...",
+    "error": "Đã xảy ra lỗi",
+    "network_error": "Không có kết nối internet",
+    "unknown_error": "Có lỗi xảy ra. Vui lòng thử lại.",
+    "success": "Thành công",
+    "skip": "Bỏ qua",
+    "next": "Tiếp theo",
+    "back": "Quay lại",
+    "done": "Xong",
+    "confirm": "Xác nhận",
+    "yes": "Có",
+    "no": "Không"
+  },
+  "auth": {
+    "welcome": "Chào mừng",
+    "sign_in_subtitle": "Đăng nhập để lưu tiến trình\nvà truy cập tất cả tính năng.",
+    "continue_with_google": "Tiếp tục với Google",
+    "continue_as_guest": "Tiếp tục là khách",
+    "sign_out": "Đăng xuất",
+    "sign_out_subtitle": "Quay về màn hình đăng nhập",
+    "sign_in_failed": "Đăng nhập thất bại",
+    "legal_notice": "Khi tiếp tục, bạn đồng ý với Điều khoản & Chính sách bảo mật của chúng tôi."
+  },
+  "onboarding": {
+    "slide1_title": "Tính năng mạnh mẽ\nTrong tầm tay bạn",
+    "slide1_subtitle": "Mọi thứ bạn cần để làm việc hiệu quả, ngăn nắp — tất cả trong một ứng dụng.",
+    "slide2_title": "AI thông minh\nLàm việc cho bạn",
+    "slide2_subtitle": "Hỏi bất cứ điều gì, nhận câu trả lời ngay lập tức và mở khoá những khả năng chưa từng tưởng tượng.",
+    "slide3_title": "Dùng miễn phí,\nNâng cấp bất kỳ lúc nào",
+    "slide3_subtitle": "Thử tất cả tính năng cơ bản miễn phí. Mở khoá truy cập không giới hạn với gói Premium.",
+    "get_premium": "Dùng Premium",
+    "start_free": "Bắt đầu miễn phí"
+  },
+  "paywall": {
+    "title": "Nâng lên Premium",
+    "subtitle": "Mở khoá truy cập không giới hạn và toàn bộ tính năng cao cấp.",
+    "feature_unlimited_ai": "Tin nhắn AI không giới hạn mỗi ngày",
+    "feature_premium_content": "Truy cập toàn bộ nội dung cao cấp",
+    "feature_no_ads": "Không quảng cáo",
+    "feature_priority_support": "Hỗ trợ ưu tiên",
+    "subscribe_now": "Đăng ký ngay",
+    "restore_purchase": "Khôi phục mua hàng",
+    "maybe_later": "Để sau",
+    "no_plans": "Không có gói dịch vụ. Vui lòng thử lại sau.",
+    "no_purchases_to_restore": "Không tìm thấy gói đăng ký nào.",
+    "premium_restored": "Đã khôi phục Premium!"
+  },
+  "home": {
+    "uses_remaining": "Còn {count} lượt dùng hôm nay",
+    "upgrade_prompt": "Nâng cấp để dùng không giới hạn",
+    "upgrade": "Nâng cấp",
+    "your_feature": "Tính năng của bạn",
+    "feature_placeholder": "Thay thế card này bằng tính năng chính của ứng dụng. Bộ đếm giới hạn miễn phí và paywall đã được kết nối sẵn.",
+    "use_feature": "Dùng tính năng",
+    "used_today": "Đã dùng hôm nay",
+    "daily_limit": "Giới hạn ngày",
+    "premium_active": "Premium đang hoạt động"
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "section_account": "Tài khoản",
+    "section_appearance": "Giao diện",
+    "section_subscription": "Đăng ký",
+    "section_legal": "Pháp lý",
+    "section_support": "Hỗ trợ",
+    "dark_mode": "Chế độ tối",
+    "dark_mode_on": "Bật",
+    "dark_mode_off": "Tắt",
+    "language": "Ngôn ngữ",
+    "go_premium": "Dùng Premium",
+    "go_premium_subtitle": "Mở khoá truy cập không giới hạn",
+    "premium_active": "Premium đang hoạt động",
+    "premium_active_subtitle": "Cảm ơn bạn đã ủng hộ!",
+    "restore_purchase": "Khôi phục mua hàng",
+    "restore_subtitle": "Khôi phục gói đăng ký trước đó",
+    "privacy_policy": "Chính sách bảo mật",
+    "terms_of_service": "Điều khoản dịch vụ",
+    "contact_support": "Liên hệ hỗ trợ",
+    "app_version": "Phiên bản ứng dụng",
+    "upgrade_label": "NÂNG CẤP"
+  },
+  "update": {
+    "available_title": "Có bản cập nhật mới",
+    "available_message": "Một phiên bản mới của ứng dụng đã sẵn sàng. Cập nhật ngay để có tính năng mới nhất.",
+    "update_now": "Cập nhật ngay",
+    "later": "Để sau"
+  },
+  "errors": {
+    "auth_failed": "Xác thực thất bại. Vui lòng thử lại.",
+    "purchase_failed": "Mua hàng thất bại. Vui lòng thử lại.",
+    "ad_not_ready": "Quảng cáo chưa sẵn sàng.",
+    "network_required": "Tính năng này cần kết nối internet."
+  }
+}
