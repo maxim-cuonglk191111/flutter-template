@@ -31,7 +31,7 @@ dependencies:
   google_sign_in: ^6.2.1
 
   # Monetization
-  purchases_flutter: ^7.4.0   # RevenueCat
+  purchases_flutter: any   # RevenueCat
   google_mobile_ads: ^5.1.0   # AdMob
 
   # Local storage
@@ -74,7 +74,7 @@ dependencies:
   # ── End v1.1 NEW ────────────────────────────────────────────
 
   # Utils
-  intl: ^0.19.0
+  intl: any
   logger: ^2.3.0
   package_info_plus: ^8.0.0
   url_launcher: ^6.3.0
@@ -105,14 +105,15 @@ flutter:
     - assets/images/
     - assets/lottie/
     - l10n/                    # Localization JSON files
+    - .env                     # Environment variables
 
-  fonts:
-    - family: Inter
-      fonts:
-        - asset: assets/fonts/Inter-Regular.ttf
-        - asset: assets/fonts/Inter-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/Inter-SemiBold.ttf
-          weight: 600
-        - asset: assets/fonts/Inter-Bold.ttf
-          weight: 700
+  # fonts:
+  #   - family: Inter
+  #     fonts:
+  #       - asset: assets/fonts/Inter-Regular.ttf
+  #       - asset: assets/fonts/Inter-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/Inter-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/Inter-Bold.ttf
+  #         weight: 700
