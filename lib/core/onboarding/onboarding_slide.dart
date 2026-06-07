@@ -32,7 +32,7 @@ class OnboardingSlide extends StatelessWidget {
             width: 180,
             height: 180,
             decoration: BoxDecoration(
-              color: backgroundColor.withOpacity(0.15),
+              color: backgroundColor.withValues(alpha: 0.15),
               shape: BoxShape.circle,
             ),
             child: Center(
@@ -40,7 +40,7 @@ class OnboardingSlide extends StatelessWidget {
                 width: 120,
                 height: 120,
                 decoration: BoxDecoration(
-                  color: backgroundColor.withOpacity(0.25),
+                  color: backgroundColor.withValues(alpha: 0.25),
                   shape: BoxShape.circle,
                 ),
                 child: Icon(icon, size: 64, color: iconColor),
@@ -63,7 +63,7 @@ class OnboardingSlide extends StatelessWidget {
           Text(
             subtitle,
             style: theme.textTheme.bodyLarge?.copyWith(
-              color: theme.colorScheme.onSurface.withOpacity(0.6),
+              color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
               height: 1.6,
             ),
             textAlign: TextAlign.center,

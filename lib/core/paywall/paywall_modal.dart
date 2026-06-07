@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:logger/logger.dart';
-import 'paywall_provider.dart';
-import '../../core/analytics/analytics_service.dart';
-import '../../shared_ui/theme/app_colors.dart';
+import 'package:flutter_template/core/paywall/paywall_provider.dart';
+import 'package:flutter_template/core/analytics/analytics_service.dart';
+import 'package:flutter_template/shared_ui/theme/app_colors.dart';
 
 /// Displays available subscription packages from RevenueCat.
 /// Show via: showModalBottomSheet(context, builder: (_) => const PaywallModal())
@@ -105,7 +105,7 @@ class _PaywallModalState extends ConsumerState<PaywallModal> {
                 Text(
                   'Unlock unlimited access and all premium features.',
                   style: theme.textTheme.bodyMedium?.copyWith(
-                    color: cs.onSurface.withOpacity(0.6),
+                    color: cs.onSurface.withValues(alpha: 0.6),
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -194,7 +194,7 @@ class _PaywallModalState extends ConsumerState<PaywallModal> {
                           final restored = await ref
                               .read(paywallProvider.notifier)
                               .restorePurchases();
-                          if (mounted) {
+                          if (context.mounted) {
                             if (restored) {
                               Navigator.of(context).pop(true);
                             } else {
@@ -215,7 +215,7 @@ class _PaywallModalState extends ConsumerState<PaywallModal> {
                         child: Text(
                           'Maybe Later',
                           style: TextStyle(
-                              color: cs.onSurface.withOpacity(0.5)),
+                              color: cs.onSurface.withValues(alpha: 0.5)),
                         ),
                       ),
                     ],
@@ -256,7 +256,7 @@ class _PackageCard extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(14),
           border: Border.all(color: cs.primary, width: 1.5),
-          color: cs.primaryContainer.withOpacity(0.15),
+          color: cs.primaryContainer.withValues(alpha: 0.15),
         ),
         child: Row(
           children: [
@@ -272,7 +272,7 @@ class _PackageCard extends StatelessWidget {
                     Text(
                       product.description,
                       style: theme.textTheme.bodySmall?.copyWith(
-                        color: cs.onSurface.withOpacity(0.5),
+                        color: cs.onSurface.withValues(alpha: 0.5),
                       ),
                     ),
                 ],

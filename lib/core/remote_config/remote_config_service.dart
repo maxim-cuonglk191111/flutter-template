@@ -1,7 +1,7 @@
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:logger/logger.dart';
-import '../../config/app_config.dart';
+import 'package:flutter_template/config/app_config.dart';
 
 /// Firebase Remote Config service.
 /// Allows changing free limits, feature flags, paywall copy

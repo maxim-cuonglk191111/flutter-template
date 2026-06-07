@@ -1,6 +1,6 @@
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:logger/logger.dart';
-import '../../config/app_config.dart';
+import 'package:flutter_template/config/app_config.dart';
 
 /// Manages AdMob initialization and ad loading.
 /// Call [AdService.instance.initialize()] from main.dart after Firebase.

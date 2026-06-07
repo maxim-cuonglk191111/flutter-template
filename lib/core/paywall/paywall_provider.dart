@@ -2,8 +2,8 @@ import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:logger/logger.dart';
-import '../../config/app_config.dart';
-import '../analytics/analytics_service.dart';
+import 'package:flutter_template/config/app_config.dart';
+import 'package:flutter_template/core/analytics/analytics_service.dart';
 
 /// Notifier that tracks the user's premium entitlement.
 class PaywallNotifier extends StateNotifier<bool> {
@@ -32,14 +32,14 @@ class PaywallNotifier extends StateNotifier<bool> {
 
   Future<bool> purchase(Package package) async {
     try {
-      final result = await Purchases.purchasePackage(package);
+      final result = await Purchases.purchase(PurchaseParams.package(package));
       final isPremium =
-          result.entitlements.all[AppConfig.revenueCatEntitlement]?.isActive ??
+          result.customerInfo.entitlements.all[AppConfig.revenueCatEntitlement]?.isActive ??
               false;
       state = isPremium;
       if (isPremium) {
         await AnalyticsService.instance
-            .logPaywallConverted(productId: package.storeProduct.productIdentifier);
+            .logPaywallConverted(productId: package.storeProduct.identifier);
         await AnalyticsService.instance.setUserPremium(isPremium: true);
       }
       return isPremium;

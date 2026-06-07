@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'ad_service.dart';
-import '../../config/app_config.dart';
-import '../paywall/paywall_provider.dart';
-import '../../shared_ui/theme/app_colors.dart';
+
+import 'package:flutter_template/config/app_config.dart';
+import 'package:flutter_template/core/paywall/paywall_provider.dart';
+import 'package:flutter_template/shared_ui/theme/app_colors.dart';
 
 /// A banner ad widget that:
 /// - Hides itself for premium users

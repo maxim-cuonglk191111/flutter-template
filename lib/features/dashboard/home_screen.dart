@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import '../../core/ads/banner_ad_widget.dart';
-import '../../core/paywall/paywall_modal.dart';
-import '../../core/paywall/paywall_provider.dart';
-import '../../core/paywall/paywall_service.dart';
-import '../../core/analytics/analytics_service.dart';
-import '../../core/remote_config/remote_config_service.dart';
-import '../../config/app_config.dart';
-import '../../shared_ui/skeleton/skeleton_loader.dart';
+import 'package:flutter_template/core/ads/banner_ad_widget.dart';
+import 'package:flutter_template/core/paywall/paywall_modal.dart';
+import 'package:flutter_template/core/paywall/paywall_provider.dart';
+import 'package:flutter_template/core/paywall/paywall_service.dart';
+import 'package:flutter_template/core/analytics/analytics_service.dart';
+import 'package:flutter_template/core/remote_config/remote_config_service.dart';
+import 'package:flutter_template/config/app_config.dart';
+import 'package:flutter_template/shared_ui/skeleton/skeleton_loader.dart';
 
 /// Home screen dashboard with:
 /// - Remote Config driven free limit
@@ -85,7 +85,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(AppConfig.appName),
+        title: const Text(AppConfig.appName),
         actions: [
           if (isPremium)
             Padding(
@@ -158,7 +158,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                             ),
                             style: TextButton.styleFrom(
                               backgroundColor:
-                                  Colors.white.withOpacity(0.2),
+                                  Colors.white.withValues(alpha: 0.2),
                               foregroundColor: Colors.white,
                               padding: EdgeInsets.symmetric(
                                   horizontal: 12.w, vertical: 6.h),
@@ -208,7 +208,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                             'home.feature_placeholder'.tr(),
                             style: theme.textTheme.bodyMedium?.copyWith(
                               color:
-                                  cs.onSurface.withOpacity(0.65),
+                                  cs.onSurface.withValues(alpha: 0.65),
                               height: 1.6,
                               fontSize: 14.sp,
                             ),
@@ -306,7 +306,7 @@ class _StatCard extends StatelessWidget {
             Text(
               label,
               style: theme.textTheme.bodySmall?.copyWith(
-                color: theme.colorScheme.onSurface.withOpacity(0.5),
+                color: theme.colorScheme.onSurface.withValues(alpha: 0.5),
                 fontSize: 11.sp,
               ),
             ),

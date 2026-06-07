@@ -1,12 +1,12 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:logger/logger.dart';
-import '../../config/app_config.dart';
+import 'package:flutter_template/config/app_config.dart';
 
 /// Initializes RevenueCat SDK. Call from main.dart after Firebase.initialize.
 Future<void> initRevenueCat() async {
   if (!AppConfig.enablePaywall) return;
-  final key = AppConfig.revenueCatApiKey;
+  const key = AppConfig.revenueCatApiKey;
   if (key.isEmpty || key == 'YOUR_REVENUECAT_API_KEY') return;
   await Purchases.setLogLevel(LogLevel.warn);
   final config = PurchasesConfiguration(key);

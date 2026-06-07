@@ -5,14 +5,14 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'app.dart';
-import 'config/app_config.dart';
-import 'core/ads/ad_service.dart';
-import 'core/notifications/notification_service.dart';
-import 'core/paywall/paywall_service.dart';
-import 'core/remote_config/remote_config_service.dart';
-import 'core/update/update_service.dart';
+
+import 'package:flutter_template/app.dart';
+import 'package:flutter_template/config/app_config.dart';
+import 'package:flutter_template/core/ads/ad_service.dart';
+import 'package:flutter_template/core/notifications/notification_service.dart';
+import 'package:flutter_template/core/paywall/paywall_service.dart';
+import 'package:flutter_template/core/remote_config/remote_config_service.dart';
+import 'package:flutter_template/core/update/update_service.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

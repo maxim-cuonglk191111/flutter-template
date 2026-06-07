@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'auth_service.dart';
-import '../../core/analytics/analytics_service.dart';
+import 'package:flutter_template/core/auth/auth_service.dart';
+import 'package:flutter_template/core/analytics/analytics_service.dart';
 
 class AuthScreen extends ConsumerStatefulWidget {
   const AuthScreen({super.key});
@@ -39,9 +39,11 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     setState(() => _isLoading = true);
     try {
       final cred = await AuthService.instance.signInWithGoogle();
-      if (cred != null && mounted) {
+      if (cred != null) {
         await AnalyticsService.instance.logSignIn(method: 'google');
-        context.go('/home');
+        if (mounted) {
+          context.go('/home');
+        }
       }
     } catch (e) {
       if (mounted) {
@@ -58,8 +60,8 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     setState(() => _isLoading = true);
     try {
       await AuthService.instance.signInAnonymously();
+      await AnalyticsService.instance.logSignIn(method: 'anonymous');
       if (mounted) {
-        await AnalyticsService.instance.logSignIn(method: 'anonymous');
         context.go('/home');
       }
     } catch (e) {
@@ -121,7 +123,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
                 Text(
                   'auth.sign_in_subtitle'.tr(),
                   style: theme.textTheme.bodyLarge?.copyWith(
-                    color: cs.onSurface.withOpacity(0.6),
+                    color: cs.onSurface.withValues(alpha: 0.6),
                     fontSize: 15.sp,
                   ),
                   textAlign: TextAlign.center,
@@ -147,7 +149,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
                                   style: theme.textTheme.bodySmall
                                       ?.copyWith(
                                     color:
-                                        cs.onSurface.withOpacity(0.5),
+                                        cs.onSurface.withValues(alpha: 0.5),
                                   ),
                                 ),
                               ),
@@ -166,7 +168,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
                 Text(
                   'auth.legal_notice'.tr(),
                   style: theme.textTheme.bodySmall?.copyWith(
-                    color: cs.onSurface.withOpacity(0.4),
+                    color: cs.onSurface.withValues(alpha: 0.4),
                     fontSize: 11.sp,
                   ),
                   textAlign: TextAlign.center,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../config/app_config.dart';
+import 'package:flutter_template/config/app_config.dart';
 
 /// All color constants for the app.
 /// Change [primarySeed] in AppConfig → full palette updates automatically.

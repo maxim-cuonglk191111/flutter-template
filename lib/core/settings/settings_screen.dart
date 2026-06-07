@@ -4,11 +4,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../../core/analytics/analytics_service.dart';
-import '../../core/auth/auth_service.dart';
-import '../../core/paywall/paywall_provider.dart';
-import '../../core/paywall/paywall_modal.dart';
-import '../../config/app_config.dart';
+import 'package:flutter_template/core/analytics/analytics_service.dart';
+import 'package:flutter_template/core/auth/auth_service.dart';
+import 'package:flutter_template/core/paywall/paywall_provider.dart';
+import 'package:flutter_template/core/paywall/paywall_modal.dart';
+import 'package:flutter_template/config/app_config.dart';
 
 // ── Theme Mode Provider ──────────────────────────────────────
 
@@ -298,7 +298,7 @@ class _SettingsTile extends StatelessWidget {
           width: 36,
           height: 36,
           decoration: BoxDecoration(
-            color: (iconColor ?? cs.primary).withOpacity(0.12),
+            color: (iconColor ?? cs.primary).withValues(alpha: 0.12),
             borderRadius: BorderRadius.circular(8),
           ),
           child: Icon(icon, size: 20, color: iconColor ?? cs.primary),
@@ -312,7 +312,7 @@ class _SettingsTile extends StatelessWidget {
             ? Text(
                 subtitle!,
                 style: theme.textTheme.bodySmall?.copyWith(
-                  color: cs.onSurface.withOpacity(0.5),
+                  color: cs.onSurface.withValues(alpha: 0.5),
                 ),
               )
             : null,

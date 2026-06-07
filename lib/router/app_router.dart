@@ -1,13 +1,13 @@
-import 'package:flutter/material.dart';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import '../core/auth/auth_provider.dart';
-import '../core/onboarding/onboarding_provider.dart';
-import '../core/auth/auth_screen.dart';
-import '../core/onboarding/onboarding_screen.dart';
-import '../core/settings/settings_screen.dart';
-import '../features/dashboard/home_screen.dart';
-import '../features/splash/splash_screen.dart';
+import 'package:flutter_template/core/auth/auth_provider.dart';
+import 'package:flutter_template/core/onboarding/onboarding_provider.dart';
+import 'package:flutter_template/core/auth/auth_screen.dart';
+import 'package:flutter_template/core/onboarding/onboarding_screen.dart';
+import 'package:flutter_template/core/settings/settings_screen.dart';
+import 'package:flutter_template/features/dashboard/home_screen.dart';
+import 'package:flutter_template/features/splash/splash_screen.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) {
   // Listen to auth & onboarding state to drive redirects

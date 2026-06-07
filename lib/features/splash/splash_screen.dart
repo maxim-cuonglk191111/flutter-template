@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../core/auth/auth_provider.dart';
-import '../../shared_ui/theme/app_colors.dart';
-import '../../config/app_config.dart';
+import 'package:flutter_template/core/auth/auth_provider.dart';
+
+import 'package:flutter_template/config/app_config.dart';
 
 /// Splash screen shown on cold start.
 /// Auto-navigates based on auth state via the router redirect logic.
@@ -33,7 +33,7 @@ class SplashScreen extends ConsumerWidget {
                 width: 100,
                 height: 100,
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.15),
+                  color: Colors.white.withValues(alpha: 0.15),
                   borderRadius: BorderRadius.circular(28),
                 ),
                 child: const Icon(
@@ -43,9 +43,9 @@ class SplashScreen extends ConsumerWidget {
                 ),
               ),
               const SizedBox(height: 24),
-              Text(
+              const Text(
                 AppConfig.appName,
-                style: const TextStyle(
+                style: TextStyle(
                   color: Colors.white,
                   fontSize: 28,
                   fontWeight: FontWeight.w800,

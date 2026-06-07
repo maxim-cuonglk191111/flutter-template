@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../../config/app_config.dart';
-import 'app_colors.dart';
-import 'app_typography.dart';
+import 'package:flutter_template/config/app_config.dart';
+import 'package:flutter_template/shared_ui/theme/app_colors.dart';
+import 'package:flutter_template/shared_ui/theme/app_typography.dart';
 
 /// App theme factory.
 /// To retheme: change [AppConfig.primarySeed] → done.
@@ -64,7 +64,7 @@ class AppTheme {
       ),
 
       // ── Cards ─────────────────────────────────────────────
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: isDark ? AppColors.surfaceVariantDark : AppColors.white,
         elevation: 0,
         margin: EdgeInsets.zero,
@@ -161,7 +161,7 @@ class AppTheme {
       ),
 
       // ── Dialog ────────────────────────────────────────────
-      dialogTheme: DialogTheme(
+      dialogTheme: DialogThemeData(
         backgroundColor:
             isDark ? AppColors.surfaceVariantDark : AppColors.white,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),

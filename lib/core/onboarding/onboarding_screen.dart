@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'onboarding_provider.dart';
-import 'onboarding_slide.dart';
-import '../../core/analytics/analytics_service.dart';
-import '../../core/paywall/paywall_modal.dart';
+import 'package:flutter_template/core/onboarding/onboarding_provider.dart';
+import 'package:flutter_template/core/onboarding/onboarding_slide.dart';
+import 'package:flutter_template/core/analytics/analytics_service.dart';
+import 'package:flutter_template/core/paywall/paywall_modal.dart';
 
 class OnboardingScreen extends ConsumerStatefulWidget {
   const OnboardingScreen({super.key});
@@ -104,7 +104,7 @@ class _OnboardingScreenState
                   child: Text(
                     'common.skip'.tr(),
                     style: TextStyle(
-                        color: cs.onSurface.withOpacity(0.5)),
+                        color: cs.onSurface.withValues(alpha: 0.5)),
                   ),
                 ),
               ),
